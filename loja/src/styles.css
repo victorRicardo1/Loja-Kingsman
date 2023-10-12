@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', Verdana;
+}
+
+header{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+}
+
+header div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    width: 33%;
+}
+
+.title{
+    font-size: 40px;
+}
+
+.options{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row; 
+    width: 67%;
+}
+
+.options .links{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-left: 60px;
+}
+
+.options .links a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+.options .links .sale{
+    color: rgb(223, 143, 157);
+}
+
+.options img{
+    margin-left: 400px;
+    width: 35px;
+}
+
+section img {
+    margin-top: 60px;
+    width: 100%;
+    height: 350px;
+}
