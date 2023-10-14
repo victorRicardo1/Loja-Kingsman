@@ -6,10 +6,26 @@
 .carrinho{
     display: flex;
     border-bottom: 2px solid black;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     transition: transform 1;
+}
+
+.sale{
+    color: rgb(223, 143, 157);
+    font-size: 20px;
+    animation: ampliar 2s alternate infinite;
+}
+
+@keyframes ampliar {
+    0% {
+        font-size: 24px; /* Tamanho inicial */
+    }
+    100% {
+        font-size: 36px; /* Tamanho ampliado */
+    }
 }
 
 button{

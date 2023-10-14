@@ -2,6 +2,7 @@
 <button (click)="exibirCarrinho()" *ngIf="iconeCarrinhoVisivel" id="carrinhoContent">
     <img src="./assets/img/cart.png" alt="carrinho">
 </button>
+<p class="sale" *ngIf="iconeCarrinhoVisivel">SALE!!!</p>
 </div>
 
 <div class="carrinhoContainer" *ngIf="carrinhoVisivel">
