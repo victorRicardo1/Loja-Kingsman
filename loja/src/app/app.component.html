@@ -1,9 +1,56 @@
+<div class="carrinho">
+<button (click)="exibirCarrinho()" *ngIf="iconeCarrinhoVisivel" id="carrinhoContent">
+    <img src="./assets/img/cart.png" alt="carrinho">
+</button>
+</div>
+
+<div class="carrinhoContainer" *ngIf="carrinhoVisivel">
+    <div class="divBTN">
+    <button class="fecharBTN" (click)="fecharCarrinho()">Fechar</button>
+    </div>
+
+    <div class="carrinhoSpace">
+    <div class="carrinhoContent">
+        <div class="camisaNoCarrinho" *ngFor="let camisa of carrinho">
+            <img [src]="camisa.camisaFoto" alt="{{camisa.camisaNome}}">
+            <p>{{camisa.nome}}</p>
+            <p>{{camisa.preco}}</p>
+        </div>
+    </div>
+    </div>
+</div>
+
 <div class="camisas">
-    <app-camisas [preco]="'R$ 50,00'" [camisaFoto]="'./assets/img/camisa/camisa barsea.png'"></app-camisas>
-    <app-camisas [preco]="'R$ 50,00'" [camisaFoto]="'./assets/img/camisa/camisa barsea.png'"></app-camisas>
-    <app-camisas [preco]="'R$ 50,00'" [camisaFoto]="'./assets/img/camisa/camisa barsea.png'"></app-camisas>
-    <app-camisas [preco]="'R$ 50,00'" [camisaFoto]="'./assets/img/camisa/camisa barsea.png'"></app-camisas>
-    <app-camisas [preco]="'R$ 50,00'" [camisaFoto]="'./assets/img/camisa/camisa barsea.png'"></app-camisas>
-    <app-camisas [preco]="'R$ 50,00'" [camisaFoto]="'./assets/img/camisa/camisa barsea.png'"></app-camisas>
-    
+    <app-camisas (adicionadoAoCarrinho)="adicionarAoCarrinho($event)" nome="Male Barcelona T-shirt" [preco]="'R$ 102,00'"
+        [camisaFoto]="'./assets/img/camisa/camisa barsea.png'"></app-camisas>
+    <app-camisas (adicionadoAoCarrinho)="adicionarAoCarrinho($event)" nome="Male Manchester united T-shirt" [preco]="'R$ 44,00'"
+        [camisaFoto]="'./assets/img/camisa/camisa mc.png'"></app-camisas>
+    <app-camisas (adicionadoAoCarrinho)="adicionarAoCarrinho($event)" nome="Male Real Madrid T-shirt" [preco]="'R$ 120,00'"
+        [camisaFoto]="'./assets/img/camisa/camisaRm.png'"></app-camisas>
+    <app-camisas (adicionadoAoCarrinho)="adicionarAoCarrinho($event)" nome="Female Juventus T-shirt" [preco]="'R$ 67,00'"
+        [camisaFoto]="'./assets/img/camisa/camisaJUVENTUS.png'"></app-camisas>
+    <app-camisas (adicionadoAoCarrinho)="adicionarAoCarrinho($event)" nome="Male Paris Saint German T-shirt" [preco]="'R$ 99,00'"
+        [camisaFoto]="'./assets/img/camisa/camisaPSG.png'"></app-camisas>
+    <app-camisas (adicionadoAoCarrinho)="adicionarAoCarrinho($event)" nome="Male Liverpool T-shirt" [preco]="'R$ 80,00'"
+        [camisaFoto]="'./assets/img/camisa/camisaLIV.png'"></app-camisas>
+    <app-camisas (adicionadoAoCarrinho)="adicionarAoCarrinho($event)" nome="Male Flamengo T-shirt" [preco]="'R$ 75,99'"
+        [camisaFoto]="'./assets/img/camisa/camisaFLA.png'"></app-camisas>
+    <app-camisas (adicionadoAoCarrinho)="adicionarAoCarrinho($event)" nome="Male Milan T-shirt" [preco]="'R$ 47,00'"
+        [camisaFoto]="'./assets/img/camisa/camisaMILAN.png'"></app-camisas>
+    <app-camisas (adicionadoAoCarrinho)="adicionarAoCarrinho($event)" nome="Male Ajax T-shirt" [preco]="'R$ 69,00'"
+        [camisaFoto]="'./assets/img/camisa/camisaAJAX.png'"></app-camisas>
+        <app-camisas (adicionadoAoCarrinho)="adicionarAoCarrinho($event)" nome="Male Germany T-shirt" [preco]="'R$ 19,45'"
+        [camisaFoto]="'./assets/img/camisa/camisaALEMANHA.png'"></app-camisas>
+        <app-camisas (adicionadoAoCarrinho)="adicionarAoCarrinho($event)" nome="Male Argentina T-shirt" [preco]="'R$ 40,99'"
+        [camisaFoto]="'./assets/img/camisa/camisaARGENTINA.png'"></app-camisas>
+        <app-camisas (adicionadoAoCarrinho)="adicionarAoCarrinho($event)" nome="Male Borussia Dortmund T-shirt" [preco]="'R$ 55,50'"
+        [camisaFoto]="'./assets/img/camisa/camisaBVB.png'"></app-camisas>
+        <app-camisas (adicionadoAoCarrinho)="adicionarAoCarrinho($event)" nome="Male Croatia T-shirt" [preco]="'R$ 80,99'"
+        [camisaFoto]="'./assets/img/camisa/camisaCROACIA.png'"></app-camisas>
+        <app-camisas (adicionadoAoCarrinho)="adicionarAoCarrinho($event)" nome="Male White Milan T-shirt" [preco]="'R$ 77,40'"
+        [camisaFoto]="'./assets/img/camisa/camisaMilanBranca.png'"></app-camisas>
+        <app-camisas (adicionadoAoCarrinho)="adicionarAoCarrinho($event)" nome="Male USA T-shirt" [preco]="'R$ 61,69'"
+        [camisaFoto]="'./assets/img/camisa/camisaUSA.png'"></app-camisas>
+        <app-camisas (adicionadoAoCarrinho)="adicionarAoCarrinho($event)" nome="Male Brazil T-shirt" [preco]="'R$ 60,50'"
+        [camisaFoto]="'./assets/img/camisa/camisBR.png'"></app-camisas>
 </div>

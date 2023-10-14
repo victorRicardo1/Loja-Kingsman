@@ -1,8 +1,9 @@
 <div class="container">
+    <p class="nomeCamisa">{{nome}}</p>
     <img class="camisaIMG" src="{{camisaFoto}}" alt="{{camisaNome}}">
     <div class="divPreco">
         <p class="preco">{{preco}}</p>
-        <button>      
+        <button (click)="adicionarAoCarrinho()">      
         <img class="carrinho" src="/assets/img/add-to-cart-3046.png" alt="carrinho">
         </button> 
     </div>

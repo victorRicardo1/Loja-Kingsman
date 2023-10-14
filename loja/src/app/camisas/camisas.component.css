@@ -20,8 +20,14 @@
     transition: 1s;
 }
 
-.camisaIMG {
+.container .nomeCamisa{
+    text-align: center;
+    font-size: 16px;
+}
+
+.camisaIMG{
     display: flex;
+    max-width: 100%;
     width: 100%;
     position: relative;
     bottom: 10px;
@@ -50,4 +56,9 @@
 
 .carrinho {
     width: 30px;
+}
+
+button{
+    border: none;
+    cursor: pointer;
 }
