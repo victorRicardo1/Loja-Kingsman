@@ -15,16 +15,16 @@
 
 .sale{
     color: rgb(223, 143, 157);
-    font-size: 20px;
+    font-size: 18px;
     animation: ampliar 2s alternate infinite;
 }
 
 @keyframes ampliar {
     0% {
-        font-size: 24px; /* Tamanho inicial */
+        font-size: 18px; /* Tamanho inicial */
     }
     100% {
-        font-size: 36px; /* Tamanho ampliado */
+        font-size: 28px; /* Tamanho ampliado */
     }
 }
 

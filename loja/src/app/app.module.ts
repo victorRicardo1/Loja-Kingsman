@@ -15,4 +15,4 @@ import { CamisasComponent } from './camisas/camisas.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

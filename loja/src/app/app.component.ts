@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
-import { CamisasComponent } from './camisas/camisas.component';
 import{ Camisa } from './camisas/camisa.model';
-import { isEmpty } from 'rxjs';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'loja';
   carrinho: Camisa[] = [];
