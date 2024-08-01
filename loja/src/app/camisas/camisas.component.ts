@@ -7,11 +7,12 @@ import { Camisa } from './camisa.model';
   styleUrls: ['./camisas.component.css']
 })
 export class CamisasComponent{
+  // @input used to be able to put values into these variables via html
   @Input() camisaFoto:string = '';
   @Input() camisaNome:string = '';
   @Input() preco:string = '';
   @Input() nome:string = '';
-
+  // @output used to throw function to another component
   @Output() adicionadoAoCarrinho = new EventEmitter<Camisa>();
 
   adicionarAoCarrinho(){
